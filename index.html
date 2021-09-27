@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <title>.: Cadastro Pessoal :.</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+</head>
+
+<body>
+    <div class="form">
+        <form method="post" action="index.php"><br>
+            <h1>Cadastro de Clientes</h1><br>
+            <h3>Conosco seus dados estão protegidos em de acordo com a LGPD</h3><br>
+            <h2> Lei Geral de Proteção de Dados</h2><br>
+            <label for="nome">Nome *</label> 
+            <input type="text" size="40" id="idNome" placeholder="Nome Completo">
+            <label for="cpf"> CPF *</label> 
+            <input type="text" id="idCpf" placeholder="000.000.000-00"><br><br>
+            <label for="Email">Email</label> 
+            <input type="text" size="40" placeholder="Email válido">
+            <label for="rg">RG</label> 
+            <input type="text" placeholder="00.000.000-0"><br><br>
+            <label for="sexo">Sexo:</label> &nbsp;
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="opcao" id="opcao1">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="opcao" id="opcao1"><br><br>
+            <label for="celular">Celular *</label> 
+            <input type="text" id="idCelular" placeholder="+000 00.0.0000.0000">
+            <label for="data">Data de Nascimento</label>
+            <input type="date" name="data" id="data"><br><br>
+            <h3>Endereço</h3><br>
+
+            <label for="uf">Estado *</label> 
+            <select name="estado" id="uf">
+                <option value="0">Escolha sua região</option>
+
+                <OPTgroup label="Norte">
+                    <option value="1">Acre</option>
+                    <option value="2">Amazonas</option>
+                    <option value="3">Amapá</option>
+                    <option value="4">Pará</option>
+                    <option value="5">Rondônia</option>
+                    <option value="6">Roraima</option>
+                    <option value="7">Tocantins</option>                   
+                </OPTgroup>
+
+                <OPTgroup label="Nordeste">
+                    <option value="8">Alagoas</option>
+                    <option value="9">Bahia</option>
+                    <option value="10">Ceará</option>
+                    <option value="11">Maranhão</option>
+                    <option value="12">Piauí</option>
+                    <option value="13">Pernambuco</option>
+                    <option value="14">Paraíba</option> 
+                    <option value="15">Rio Grande do Norte</option>
+                    <option value="16">Sergipe</option>                                      
+                </OPTgroup>
+
+                <OPTgroup label="Centro-oeste">
+                    <option value="17">Goiás</option>
+                    <option value="18">Mato Grosso</option>
+                    <option value="19">Mato Grosso do Sul</option>
+                    <option value="20">Distrito Federal</option>                                                      
+                </OPTgroup>
+
+                <OPTgroup label="Sudeste">
+                    <option value="21">Espírito Santo</option>
+                    <option value="22">Minas Gerais</option>
+                    <option value="23">Rio de Janeiro</option>
+                    <option value="24">São Paulo</option>                                                      
+                </OPTgroup>
+
+                <OPTgroup label="Sul">
+                    <option value="25">Paraná</option>
+                    <option value="26">Rio Grande do Sul</option>
+                    <option value="27">Santa Catarina</option>                                                                       
+                </OPTgroup>
+
+            </select>
+
+            <label for="cidade">Cidade *</label>
+            <input type="text" id="idCidade" placeholder="Cidade"><br><br>
+            <label for="cep">Cep</label>
+            <input type="text" placeholder="00000-000">
+            <label for="bairro">Bairro</label>
+            <input type="text" id="idRua" placeholder="Bairro"><br><br>
+            <label for="rua">   Rua *</label>
+            <input type="text" size="30" id="idNu" placeholder="Logradouro">
+            <label for="numero">Número *</label>
+            <input type="text" size="5" placeholder="00000"><br><br>
+            <label for="complemento">Complemento</label>
+            <input type="text" size="30" placeholder=" - Andar - Apartamento - Bloco"><br><br>
+
+            <input type="button" onclick="Cadastrar()" id="botao" value="Todos campos preenchidos?"/> <br><br>
+            <input type="button" onclick="funcao1()" value="Enviar!"/><br><br>
+            <p id="demo"></p>
+
+        </form><br>
+
+        <small>* É obrigatório.</small>
+
+    </div>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
